@@ -1,0 +1,27 @@
+{
+  "name": "food-festival",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Araceli4690/food-festival.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Araceli4690/food-festival/issues"
+  },
+  "homepage": "https://github.com/Araceli4690/food-festival#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "bootstrap": "^5.1.0",
+    "jquery": "^3.6.0"
+  }
+}
