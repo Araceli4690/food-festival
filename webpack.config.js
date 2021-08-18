@@ -14,6 +14,34 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].bundle.js'
     },
+    module: {
+        rules: [
+            {
+                //identifying files to pre-process using regex, in this case any images
+                test: /\.jpg$/i,
+                use: [{
+                    //webpack file-loader being implemented
+                    loader: 'file-loader',
+                    options: {
+                        esModule: false,
+                        //return name of file with file extension
+                        name(file) {
+                            return "[path][name].[ext]"
+                        },
+                        //changes assigment url
+                        publicPath: function (url) {
+                            return url.replace("../", "/assets")
+                        }
+                    }
+                },
+                {
+                    //image loader reduces image size
+                    loader: 'image-webpack-loader'
+                }
+                ]
+            }
+        ]
+    },
     plugins: [
         new webpack.ProvidePlugin({
             $: "jquery",
