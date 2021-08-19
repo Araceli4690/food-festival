@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="manifest" href="dist/manifest.json">
 
   <script src='./dist/app.bundle.js'></script>
 
@@ -172,5 +173,17 @@
       Rights Reserved.</div>
   </footer>
 </body>
+
+<script>
+  //registering the service worker
+  (function () {
+    //checking if service worker exist on global navigator object
+    if ("serciveWorker" in navigator) {
+      navigator.serviceWorker.register("./service-worker.js")
+        .then(() => console.log("Service Worker registered successfully"))
+        .catch(error => console.log("Service Worker registration failed", error));
+    }
+  })
+</script>
 
 </html>
