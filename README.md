@@ -12,7 +12,7 @@ Food festival is an app created for a three day foo festival event where users c
 * Popper.js
 
 ## Deployed app 
-To view the application locally clone the repo and open the application in your prefered browser or you can view the deployed application at the following link https://araceli4690.github.io/food-festival/index.html.
+To view the application locally clone the repo and open the application in your prefered browser or you can view the deployed application at the following link https://araceli4690.github.io/food-festival/
 
 - sample of app
 
