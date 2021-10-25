@@ -2,7 +2,7 @@
   "name": "food-festival",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "assets/js/script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "webpack": "webpack --watch",
@@ -29,10 +29,10 @@
     "webpack-pwa-manifest": "^4.3.0"
   },
   "dependencies": {
-    "@popperjs/core": "^2.9.3",
     "bootstrap": "^5.1.0",
     "image-webpack-loader": "^7.0.1",
     "jquery": "^3.6.0",
-    "popper.js": "^1.16.1"
+    "popper.js": "^1.16.1",
+    "sw-precache-webpack-plugin": "^1.0.0"
   }
 }
